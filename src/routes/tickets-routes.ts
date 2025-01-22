@@ -5,5 +5,7 @@ const ticketsRoutes = Router()
 const ticketsController = new TicketsController
 
 ticketsRoutes.post("/", ticketsController.create)
+ticketsRoutes.get("/", ticketsController.index)
+ticketsRoutes.put("/:id", ticketsController.update)
 
 export {ticketsRoutes}
