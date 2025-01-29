@@ -7,5 +7,6 @@ const ticketsController = new TicketsController
 ticketsRoutes.post("/", ticketsController.create)
 ticketsRoutes.get("/", ticketsController.index)
 ticketsRoutes.put("/:id", ticketsController.update)
+ticketsRoutes.delete("/:id", ticketsController.delete)
 
 export {ticketsRoutes}
